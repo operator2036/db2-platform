@@ -25,7 +25,13 @@ export default function JBrowseViewInner({ assembly, tracks, speciesKey }: Props
   );
 
   return (
-    <div key={speciesKey} style={{ width: "100%" }}>
+    <div
+      style={{
+        width: "100%",
+        height: "calc(100vh - 130px)",
+        minHeight: "600px",
+      }}
+    >
       <JBrowseLinearGenomeView viewState={state} />
     </div>
   );

@@ -8,10 +8,11 @@ import { useEffect, useState } from "react";
 
 const links = [
   { href: "/", label: "Index" },
-  { href: "/genome-browser", label: "Genome Browser" },
+  { href: "/genome-browser/otaurus", label: "Genome Browser" },
   { href: "/distribution", label: "Distribution" },
   { href: "/resources", label: "Resources" },
   { href: "/downloads", label: "Downloads" },
+  { href: "/datasets", label: "Datasets" },
   { href: "/literature", label: "Literature" },
   { href: "/people", label: "People" },
 ];
@@ -141,7 +142,7 @@ export default function Navbar() {
           </nav>
 
           <div className="hidden lg:flex" style={{ justifyContent: "flex-end" }}>
-            <Link href="/genome-browser" className="db-magnetic-link">
+            <Link href="/genome-browser/otaurus" className="db-magnetic-link">
               Launch
             </Link>
           </div>
